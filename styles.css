@@ -86,6 +86,8 @@ a{
 
 .mountain{
     margin-bottom: 0%;
+    width: auto;
+    height: auto;
 }
 
 hr {
