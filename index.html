@@ -10,6 +10,9 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 
   <!-- Original Style Sheet -->
   <link rel="stylesheet" href="styles.css">
@@ -20,84 +23,137 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Montserrat:ital@0;1&display=swap"
     rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/15165ddffa.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md sticky-top bg-light">
+
+  <section id="title">
+
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://prnvtripathi.github.io/personal/" target="_blank"><img
-          src="images/profile.png" alt="Pranav" style="height: 50px;"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: 80%;" aria-current="page" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: 80%;" aria-current="page" href="#contact-me">Contact Me</a>
-          </li>
-        </ul>
-      </div>
+      <nav class="navbar navbar-expand-md navbar-dark"
+        style="background-image: linear-gradient(to left,#42275a, #734b6d);">
+        <a class="navbar-brand title-name" href="#title">Pranav</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Hire Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
-  <div class="top">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud-bg">
-    <h1>I'm Pranav</h1>
-    <h2>a programmer</h2>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-bg">
-    <img class="mountain" src="images/mountain.png" alt="mountain-bg">
-  </div>
-  <div class="middle">
+
+    <div class="container-fluid text-center name-intro">
+      <h1 class="name-title">I'm Pranav</h1>
+      <h2 class="intro-title">a programmer</h2>
+    </div>
+  </section>
+
+  <section id="profile">
     <div class="profile">
       <img class="dpic" src="images\profile.png" alt="profile picture">
       <h2 class="intro-head">Hello,</h2>
-      <p class="intro">I am a student from Delhi, India</p>
+      <p class="introduction">I am a student from Delhi, India</p>
     </div>
     <hr>
-    <div id="skills" class="skills">
-      <h2>My Skills</h2>
-      <div class="skill-row">
-        <img class="icon-left" src="images/front-end.png" alt="front-end">
-        <h3>Front End Development</h3>
-        <p>I like web designing and learning it since August 2022. I'm used to with HTML and CSS</p>
-      </div>
-      <div class="skill-row">
-        <img class="icon-right" src="images/c++.png" alt="C++">
-        <h3>C++ Programming</h3>
-        <p>Computer Programming has been a constant source of interest for me and C++ is part of this journey. I know a
-          quite about Data Structures and their applications.</p>
-      </div>
-      <div class="skill-row">
-        <img class="icon-left" src="images/gimp.png" alt="GIMP">
-        <h3>GIMP</h3>
-        <p>I like photo editing a lot and GIMP is great open-source tool to edit pictures with.</p>
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills">
+    <div class="skills text-center">
+      <h2 class="skills-heading">My Skills</h2>
+      <div class="row row-cols-1 row-cols-md-3 text-center row-justif">
+        <div class="card col mb-4 rounded-3 shadow-sm text-center" style="width: 18rem;">
+          <img class="card-img-top icons" src="images/front-end.png" alt="front-end">
+          <h3 class="card-title">Front End Development</h3>
+          <p class="card-text">I like web designing. I'm used to with HTML, CSS & Bootstrap</p>
+        </div>
+        <div class="card col mb-4 rounded-3 shadow-sm text-center" style="width: 18rem;">
+          <img class="card-img-top icons" src="images/c++.png" alt="C++">
+          <h3 class="card-title">C++ Programming</h3>
+          <p class="card-text">I know a
+            quite about Data Structures and their applications.</p>
+        </div>
+        <div class="card col mb-4 rounded-3 shadow-sm text-center" style="width: 18rem;">
+          <img class="card-img-top icons" src="images/powerpoint.png" alt="GIMP">
+          <h3 class="card-title">MS PowerPoint</h3>
+          <p class="card-text">Presenting was always my hobby and I like PowerPoint a lot.</p>
+        </div>
       </div>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Freelancing Available</h3>
-      <p id="contact-me" class="contact-desc">If you have a job which you think, I can fulfill then let's talk about it.
-      </p>
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+    <div class="container-fluid py-4 text-center">
+      <h2 class="projects-heading">Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-5 bg-light border rounded-3 jumbo-projects">
+            <h2 class="jumbo-headings">PressArt Landing Page</h2>
+            <p>PressArt is a photo editing app and it has many features like new and better interface with balance
+              adjustments. Wanna try this clear edge editing software ?</p>
+            <a href="https://prnvtripathi.github.io/pressart-landing-page/"><button class="btn btn-outline-primary"
+                type="button">PressArt</button></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-5 bg-light border rounded-3 jumbo-projects">
+            <h2 class="jumbo-headings">Movie Recommender System with Emotion Recognition</h2>
+            <p>This project works on Machine Learning and will recommend you a movie on the basis of your emotions.
+              It'll be live soon....</p>
+            <button class="btn btn-outline-dark" type="button">Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact-me -->
+
+  <section id="contact-me">
+    <div class="container-fluid text-center py-4">
+      <h2 class="contact-heading">Get In Touch</h2>
+      <h3 class="freelance-head">Freelancing Available</h3>
+      <p class="contact-desc">If you have a job and you think I can fulfill it, then let's talk about it.</p>
       <a class="btnmail" href="mailto:tripathipranav14@gmail.com">MAIL ME :)</a>
     </div>
-  </div>
+  </section>
 
+  <section id="bottom">
+    <div class="footer">
+      <a class="footer-link" href="https://www.linkedin.com/in/tripathipranav14/"><i
+          class="fa-brands fa-linkedin fa-2x icon-links"></i></a>
+      <a class="footer-link" href="https://twitter.com/prnvtwts"><i
+          class="fa-brands fa-twitter fa-2x icon-links"></i></a>
+      <a class="footer-link" href="https://github.com/prnvtripathi"><i
+          class="fa-brands fa-github fa-2x icon-links"></i></a>
+      <p class="last-line">© Pranav Tripathi.</p>
+    </div>
+  </section>
 
-  <div class="bottom">
-    <a class="footer-link" href="https://www.linkedin.com/in/tripathipranav14/"><img class="footer-icon"
-        src="images/linkedin.png" alt="LinkedIn"></a>
-    <a class="footer-link" href="https://twitter.com/prnvtwts"><img class="footer-icon" src="images/twitter.png"
-        alt="Twitter"></a>
-    <a class="footer-link" href="https://github.com/prnvtripathi"><img class="footer-icon" src="images/github.png"
-        alt="Github"></a>
-    <p>© Pranav Tripathi.</p>
-  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
